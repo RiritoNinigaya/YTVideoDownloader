@@ -7,7 +7,7 @@ def Main():
 
     videol = video_link.streams.filter(file_extension="mp4") 
 
-    res720 = videol.filter(audio_codec="MP3")
+    res720 = videol.filter(res="720p")
 
     if(res720):
         print("This Resolution Is Founded... Downloading...")
