@@ -1,7 +1,10 @@
 import pytube as youtube_py
-
+import ctypes
 def Main():
-    yt_down = input("Please Write YouTube Video Link: ")
+    kernel32 = ctypes.CDLL("Kernel32")
+    converted_titleAnsi = bytes("YTVideoDownloader | Made by RiritoNinigaya", "UTF-8")
+    kernel32.SetConsoleTitleA(converted_titleAnsi)
+    yt_down = input("Please Write YouTube Link: ")
 
     video_link = youtube_py.YouTube(str(yt_down))
 
