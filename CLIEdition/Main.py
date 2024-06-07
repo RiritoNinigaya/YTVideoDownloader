@@ -4,7 +4,7 @@ def Main():
     kernel32 = ctypes.CDLL("Kernel32")
     converted_titleAnsi = bytes("YTVideoDownloader | Made by RiritoNinigaya", "UTF-8")
     kernel32.SetConsoleTitleA(converted_titleAnsi)
-    yt_down = input("Please Write YouTube Link: ")
+    yt_down = input("Please Write YouTube Video Link: ")
 
     video_link = youtube_py.YouTube(str(yt_down))
 
