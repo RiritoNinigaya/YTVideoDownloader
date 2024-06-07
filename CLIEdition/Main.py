@@ -1,7 +1,7 @@
 import pytube as youtube_py
 
 def Main():
-    yt_down = input("Please Write YouTube Link: ")
+    yt_down = input("Please Write YouTube Video Link: ")
 
     video_link = youtube_py.YouTube(str(yt_down))
 
