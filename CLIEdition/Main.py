@@ -1,5 +1,6 @@
 import pytube as youtube_py
 import ctypes
+from time import sleep
 def Main():
     kernel32 = ctypes.CDLL("Kernel32")
     converted_titleAnsi = bytes("YTVideoDownloader | Made by RiritoNinigaya", "UTF-8")
@@ -15,6 +16,9 @@ def Main():
     if(res720):
         print("This Resolution Is Founded... Downloading...")
         res720[0].download()
+        print("Download is Completed!!! Thank you for Choosing this Program!!! \nMade by RiritoNinigaya!!!")
+        sleep(3)
+        exit(676)
     else:
         print("This Resolution Is Not Founded... Pls Try Another Video")
         return
